@@ -5,4 +5,9 @@ node_modules
 .parcel-cache
 /dist
 
+<<<<<<< HEAD
 .DS_Store 
+=======
+.DS_Store 
+.cache
+>>>>>>> 1f79912 (Initial commit)

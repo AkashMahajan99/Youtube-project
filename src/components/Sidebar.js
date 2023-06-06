@@ -7,7 +7,11 @@ const Sidebar = () => {
         <li  >home</li>
         <li>home</li>
         <li>home</li>
+<<<<<<< HEAD
         <li>home</li>
+=======
+        <li>home</li> 
+>>>>>>> 1f79912 (Initial commit)
         <li>home</li></ul>
     </div>
   )

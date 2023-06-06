@@ -7,7 +7,11 @@ const Videocard = () => {
        <h2 className='font-semibold text-black px-1'>title</h2>
                 <h3 className='px-1 text-gray-500 text-sm '>channel name</h3>
                 <div className='flex justify-start gap-2 px-1 text-sm text-gray-500'>
+<<<<<<< HEAD
                     <h3>video views</h3>
+=======
+                     <h3>video views</h3>
+>>>>>>> 1f79912 (Initial commit)
                     <h3>time since uploaded</h3>
                     </div>
 

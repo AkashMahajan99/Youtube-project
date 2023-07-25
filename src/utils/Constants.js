@@ -1,19 +1,20 @@
-import HomeIcon from "../assets/images/home.svg"
-import ShortsIcon from "../assets/images/shorts.svg"
-import FeedbackIcon from "../assets/images/feedback.svg"
-import SettingsIcon from "../assets/images/settings.svg"
-import HelpIcon from "../assets/images/help.svg"
-import ShowMoreIcon from "../assets/images/show-more.svg"
-import LikedIcon from "../assets/images/liked.svg"
-import VideosIcon from "../assets/images/videos.svg"
-import HistoryIcon from "../assets/images/history.svg"
-import LibraryIcon from "../assets/images/library.svg"
-import SubscribeIcon from "../assets/images/subscribe.svg"
-
-export const VIDEO_LIST_URL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&maxResults=50&key=${process.env.REACT_APP_API_KEY}`
-export const COMMENTS_THREAD_URL = `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=${process.env.REACT_APP_API_KEY}&maxResults=100`;
-export const VIDEO_INFO_URL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key=${process.env.REACT_APP_API_KEY}`
-export const SEARCH_URL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&key=${process.env.REACT_APP_API_KEY}`;
+import HomeIcon from "../components/assets/home.svg"
+import ShortsIcon from "../components/assets/shorts.svg"
+import FeedbackIcon from "../components/assets/feedback.svg"
+import SettingsIcon from "../components/assets/settings.svg"
+import HelpIcon from "../components/assets/help.svg"
+import ShowMoreIcon from "../components/assets/show-more.svg"
+import LikedIcon from "../components/assets/liked.svg"
+import VideosIcon from "../components/assets/videos.svg"
+import HistoryIcon from "../components/assets/history.svg"
+import LibraryIcon from "../components/assets/library.svg"
+import SubscribeIcon from "../components/assets/subscribe.svg"
+import Wathclater from '../components/assets/watchlater.svg'
+const API =`AIzaSyD0Ek3KTGYljSJjexSdoCZtUnbuwEDLPHw`;
+export const VIDEO_LIST_URL = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&maxResults=50&chart=mostPopular&regionCode=IN&key=AIzaSyD0Ek3KTGYljSJjexSdoCZtUnbuwEDLPHw";
+export const COMMENTS_THREAD_URL = `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=AIzaSyD0Ek3KTGYljSJjexSdoCZtUnbuwEDLPHw&maxResults=100`;
+export const VIDEO_INFO_URL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key=AIzaSyD0Ek3KTGYljSJjexSdoCZtUnbuwEDLPHw`
+export const SEARCH_URL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&type=video&key=AIzaSyD0Ek3KTGYljSJjexSdoCZtUnbuwEDLPHw`;
 export const AUTOSUGGESTION_SEARCH_URL = `https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=`
 export const SIDEBAR_OPTIONS = [
     {
@@ -41,7 +42,7 @@ export const SIDEBAR_OPTIONS = [
         name: "Your Videos"
     },
     {
-        icon: HomeIcon,
+        icon: Wathclater,
         name: "Watch Later"
     },
     {

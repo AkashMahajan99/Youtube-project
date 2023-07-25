@@ -1,20 +1,42 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom/client';
 import Header from './src/components/Header';
-import Sidebar from './src/components/Sidebar';
-import Videocontainer from './src/components/Videocontainer';
+import Body from './src/components/Body';
+import { store } from './src/redux/store';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Maincontainer from './src/components/Maincontainer';
+import WatchPage from './src/components/WatchPage/WatchPage';
+import SearchResultPage from './src/components/WatchPage/SearchResultPage';
 
+const appRouter = createBrowserRouter([{
+  path:"/",
+  element: <Body/>,
+  children:[
+    {
+      path:"/",
+      element: <Maincontainer/>
+    },
+    {
+      path:"watch",
+      element: <WatchPage/>
+    },
+    {
+      path:"SearchResults",
+      element: <SearchResultPage/>
+    }
+  ]
+}])
 const AppLayout = () => {
     return (
+      <Provider store={store}>
       <div className=' '>
-    <div>
-       <Header/>
+    
+      
+      <RouterProvider router={appRouter}/>
+     
       </div>
-      <div className='flex flex-row h-[calc(100vh-50px)]'>
-        <Sidebar/>
-      <Videocontainer/>
-      </div>
-      </div>
+      </Provider>
     );
   };
 

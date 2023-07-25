@@ -7,14 +7,27 @@ const Sidebar = () => {
         <li  >home</li>
         <li>home</li>
         <li>home</li>
-<<<<<<< HEAD
-        <li>home</li>
-=======
         <li>home</li> 
->>>>>>> 1f79912 (Initial commit)
-        <li>home</li></ul>
+        <li>home</li>
+        <li  >home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li> 
+        <li>home</li>
+        </ul>
     </div>
   )
 }
 
-export default Sidebar
+
+export default function Sidebar() {
+  const sidebarVisibility = useSelector((store) =>store.sidebarVisibility.value);
+  return sidebarVisibility ?(
+ 
+    <div className='w-[220px] h-full py-1 px-2 border-r-2 border-gray-100 '>
+  {SIDEBAR_OPTIONS?.map((options, index) => {
+        return <SidebarOption key={index} icon={options.icon} name={options.name} />
+      })}
+    </div>
+  ):null
+}

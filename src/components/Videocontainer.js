@@ -16,33 +16,9 @@ const Videocontainer = () => {
 
   return (
     <div className=' mt-5 p-2 flex flex-wrap w-[calc(100vw-220px)] '>
-        <Videocard/>
-        <Videocard/> 
-        <Videocard/>
-         <Videocard/>
-        <Videocard/>  
-        <Videocard/>
-         <Videocard/>
-        <Videocard/>
-        <Videocard/>
-        <Videocard/>
-        <Videocard/>
-        <Videocard/>
-         <Videocard/>
-        <Videocard/>
-        <Videocard/>
-         <Videocard/>
-        <Videocard/>
-        <Videocard/>
-        <Videocard/>
-        <Videocard/>
-        <Videocard/>
-         <Videocard/>
-        <Videocard/>
-        <Videocard/>
-         <Videocard/>
-        <Videocard/>
-        <Videocard/>
+         {videos?.map((video) => {
+                return <Videocard key={video.id} video={video} />
+            })}
     </div>
   )
 }

@@ -5,6 +5,8 @@ node_modules
 .parcel-cache
 /dist
 
+.env
+
 <<<<<<< HEAD
 .DS_Store 
 =======

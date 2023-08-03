@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tag = ({ name }) => {
   return (
-      <button className=' h-10 w-fit bg-gray-200 text-black px-3 py-1 mx-3 rounded-lg'>
+      <button className=' h-10 w-fit bg-gray-200  text-black px-3 py-1 mx-3 rounded-lg hover:bg-gray-600'>
           {name}
       </button>)
 }

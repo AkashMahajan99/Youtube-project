@@ -1,5 +1,5 @@
 import React from 'react'
-import Hamlogo from "./assets/Hamburger.svg";
+import Hamlogo from "./assets/hamburger.svg";
 import Profile from "./assets/profile.svg";
 import likedinlogo from './assets/linkedin.svg'
 import Ytlogo from './assets/Logo_of_YouTube_(2015-2017).svg';

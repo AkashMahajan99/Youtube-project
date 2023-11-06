@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "source": "index.html"
+  "source": "index.html",
   "scripts": {
     "test": "jest",
-    "start": "parcel ",
+    "start": "parcel  ",
     "build": "parcel build"
   },
   "keywords": [],

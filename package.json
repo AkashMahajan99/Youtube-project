@@ -2,7 +2,7 @@
   "name": "recactproject",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "source": "index.html",
   "scripts": {
     "test": "jest",

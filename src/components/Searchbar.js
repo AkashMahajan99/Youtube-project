@@ -59,8 +59,7 @@ const Searchbar = () => {
                                 to='/searchResults'
                                 state={{ searchedQuery: item }}
                                 onClick={() => { setSearchvalue("") }}
-                                className='flex items-center pt-3 px-5 hover:bg-gray-50 font-semibold text-slate-700'
-                            >
+                                className='flex items-center pt-3 px-5 hover:bg-gray-50 font-semibold text-slate-700'>
                                <img src={Magnifier} alt="maginfierIcon" className='h-5 w-5 mr-4' />  
                                 {item}
                             </Link>

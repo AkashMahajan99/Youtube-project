@@ -26,9 +26,7 @@ const Header = () => {
          </div>
        <Searchbar/>
        <div className='mx-2 flex '>
-        <a href="https://www.linkedin.com/in/akash-mahajan-87b580134/" target="_blank">
-                <img className="w-8 h-8 text-black-900 mx-4 cursor-pointer  "  src={likedinlogo} alt="linkedin" />
-                </a>
+        
                 <img className="w-8 h-8 text-black-900 " src={Profile} alt="profile-icon" />
             </div>
     </div>

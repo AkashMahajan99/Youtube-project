@@ -55,7 +55,7 @@ const Searchbar = () => {
                         console.log(item)
                         return <form>
                             <Link
-                                key={item.id}
+                                key={item}
                                 to='/searchResults'
                                 state={{ searchedQuery: item }}
                                 onClick={() => { setSearchvalue("") }}

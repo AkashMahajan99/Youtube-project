@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom/client';
 import Header from './src/components/Header';
@@ -11,7 +12,7 @@ import SearchResultPage from './src/components/WatchPage/SearchResultPage';
 
 const appRouter = createBrowserRouter([{
   path:"/",
-  element: <Body/>,
+  element: <Body/> ,
   children:[
     {
       path:"/",
@@ -30,12 +31,9 @@ const appRouter = createBrowserRouter([{
 const AppLayout = () => {
     return (
       <Provider store={store}>
-      <div className=' '>
-    
       
-      <RouterProvider router={appRouter}/>
+    <RouterProvider router={appRouter}/>
      
-      </div>
       </Provider>
     );
   };

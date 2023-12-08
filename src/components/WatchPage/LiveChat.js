@@ -40,7 +40,7 @@ const LiveChat = () => {
       {
         liveBroadcast?.map((chat, index) => {
           return <div key={index} className='flex flex-row px-3 items-center mb-2'>
-            <img className="w-5 h-5 text-black-900 mr-2 rounded-full" src={generateProfileImage() || ProfileIcon} alt="profile-icon" />
+            <img className="w-5 h-5 text-black-900 mr-2 rounded-full" src={generateProfileImage() || Profile} alt="profile-icon" />
             <h1 className="font-semibold mr-2">{chat.username}</h1>
             <h1 className='text-sm'>{chat.message}</h1>
           </div>
